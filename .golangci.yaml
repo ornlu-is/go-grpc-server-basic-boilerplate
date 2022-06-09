@@ -1,0 +1,23 @@
+run:
+  timeout: 2m
+  concurrency: 5
+
+linters:
+  enable:
+    - bodyclose
+    - deadcode
+    - errcheck
+    - errname
+    - errorlint
+    - gci
+    - gocritic
+    - gofmt
+    - gosimple
+    - gosec
+    - govet
+    - ineffassign
+    - ifshort
+    - revive
+    - staticcheck
+    - unused
+    - whitespace

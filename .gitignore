@@ -1,0 +1,5 @@
+# ignore generated code
+*.pb.go
+
+# ignore binary folder
+bin/
