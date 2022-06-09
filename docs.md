@@ -9,14 +9,14 @@
 
 
 - Messages
-    - [AddReq](#addreq)
-    - [AddResp](#addresp)
-    - [DeleteReq](#deletereq)
-    - [DeleteResp](#deleteresp)
-    - [GetReq](#getreq)
-    - [GetResp](#getresp)
-    - [UpdateAgeReq](#updateagereq)
-    - [UpdateAgeResp](#updateageresp)
+    - [AddReq](#AddReq)
+    - [AddResp](#AddResp)
+    - [DeleteReq](#DeleteReq)
+    - [DeleteResp](#DeleteResp)
+    - [GetReq](#GetReq)
+    - [GetResp](#GetResp)
+    - [UpdateAgeReq](#UpdateAgeReq)
+    - [UpdateAgeResp](#UpdateAgeResp)
   
 
 

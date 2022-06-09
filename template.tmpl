@@ -4,17 +4,17 @@
 {{range .Files}}
 {{if .HasServices}}
 - Services
-  {{range .Services}}  - [{{.Name}}](#{{.Name }})
+  {{range .Services}}  - [{{.Name}}](#{{.Name}})
   {{end}}
 {{end}}
 {{if .HasMessages}}
 - Messages
-  {{range .Messages}}  - [{{.LongName}}](#{{.LongName | lower | replace "." ""}})
+  {{range .Messages}}  - [{{.LongName}}](#{{.LongName}})
   {{end}}
 {{end}}
 {{if .HasEnums}}
 - Enums
-  {{range .Enums}}  - [{{.LongName}}](#{{.LongName | lower | replace "." ""}})
+  {{range .Enums}}  - [{{.LongName}}](#{{.LongName}})
   {{end}}
 {{end}}
 {{end}}
