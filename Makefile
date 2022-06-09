@@ -1,5 +1,5 @@
 SHELL=/bin/bash
-TEST_COVERAGE_THRESHOLD=63.8
+TEST_COVERAGE_THRESHOLD=63.9
 
 .SILENT: proto test lint docs build run
 
@@ -19,7 +19,7 @@ test:
 	if [ $$(bc <<< "$$coverage < $(TEST_COVERAGE_THRESHOLD)") -eq 1 ]; then \
 		echo "Low coverage: $$coverage < $(TEST_COVERAGE_THRESHOLD)" ;\
 		exit 1 ;\
-	fi ;\
+	fi
 
 lint:
 	golangci-lint run --config ./.golangci.yaml
