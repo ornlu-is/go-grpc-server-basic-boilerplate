@@ -17,7 +17,7 @@ test:
 	coverage=$$(go tool cover -func=coverage.out | grep total | grep -Eo '[0-9]+\.[0-9]+') ;\
 	rm coverage.out ;\
 	if [ $$(bc <<< "$$coverage < $(TEST_COVERAGE_THRESHOLD)") -eq 1 ]; then \
-		echo "Low coverage: $$coverage < $(TEST_COVERAGE_THRESHOLD)" ;\
+		echo "Low test coverage: $$coverage < $(TEST_COVERAGE_THRESHOLD)" ;\
 		exit 1 ;\
 	fi
 
