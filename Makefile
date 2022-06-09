@@ -13,7 +13,7 @@ proto:
     				 --proto_path=. 
 
 test:
-	cd server; go test -coverprofile=../coverage.out 
+	go test ./... -coverprofile=coverage.out 
 	coverage=$$(go tool cover -func=coverage.out | grep total | grep -Eo '[0-9]+\.[0-9]+') ;\
 	rm coverage.out ;\
 	if [ $$(bc <<< "$$coverage < $(TEST_COVERAGE_THRESHOLD)") -eq 1 ]; then \
