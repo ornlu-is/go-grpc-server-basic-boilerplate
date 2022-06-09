@@ -4,6 +4,7 @@ syntax = "proto3";
 package boilerplate;
 option go_package = "boilerplate/";
 
+// Boilerplate does some stuff
 service Boilerplate {
     // Add adds stuff
     rpc Add (AddReq) returns (AddResp) {}
