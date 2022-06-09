@@ -57,7 +57,7 @@ UpdateAge updates age
 # Messages
 
 
-## AddReq {#addreq}
+## AddReq
 AddReq does something
 
 
@@ -71,13 +71,13 @@ AddReq does something
  <!-- end HasFields -->
 
 
-## AddResp {#addresp}
+## AddResp
 AddResp does something
 
  <!-- end HasFields -->
 
 
-## DeleteReq {#deletereq}
+## DeleteReq
 DeleteReq does something
 
 
@@ -88,13 +88,13 @@ DeleteReq does something
  <!-- end HasFields -->
 
 
-## DeleteResp {#deleteresp}
+## DeleteResp
 DeleteResp does something
 
  <!-- end HasFields -->
 
 
-## GetReq {#getreq}
+## GetReq
 GetReq does something
 
 
@@ -105,7 +105,7 @@ GetReq does something
  <!-- end HasFields -->
 
 
-## GetResp {#getresp}
+## GetResp
 GetResp does something
 
 
@@ -119,7 +119,7 @@ GetResp does something
  <!-- end HasFields -->
 
 
-## UpdateAgeReq {#updateagereq}
+## UpdateAgeReq
 UpdateAgeReq does something
 
 
@@ -131,7 +131,7 @@ UpdateAgeReq does something
  <!-- end HasFields -->
 
 
-## UpdateAgeResp {#updateageresp}
+## UpdateAgeResp
 UpdateAgeResp does something
 
  <!-- end HasFields -->
