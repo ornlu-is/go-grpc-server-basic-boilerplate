@@ -4,7 +4,7 @@
 {{range .Files}}
 {{if .HasServices}}
 - Services
-  {{range .Services}}  - [{{.Name}}](#{{.FullName | lower | replace "." ""}})
+  {{range .Services}}  - [{{.Name}}](#{{.Name }})
   {{end}}
 {{end}}
 {{if .HasMessages}}
