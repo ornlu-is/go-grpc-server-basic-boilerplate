@@ -5,6 +5,8 @@
 {{if .HasServices}}
 - Services
   {{range .Services}}  - [{{.Name}}](#{{.Name}})
+      {{range .Methods -}} - [{{.Name}}](#{{.Name}})
+      {{end}}
   {{end}}
 {{end}}
 {{if .HasMessages}}
