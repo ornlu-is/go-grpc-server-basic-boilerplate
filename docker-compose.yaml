@@ -1,0 +1,28 @@
+services:
+  pg:
+    container_name: pg
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_HOST_AUTH_METHOD=trust
+    ports:
+      - "6666:6666"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "postgres", "-h", "localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+  migrate:
+    container_name: dbmigrations
+    build:
+      context: ./pg
+      dockerfile: Dockerfile.migrate.test
+    environment:
+      - DB_OWNER=postgres
+      - DB_HOST=pg
+      - DB_PORT=6666
+      - DB_NAME=postgres
+    depends_on:
+      pg:
+        condition: service_healthy
