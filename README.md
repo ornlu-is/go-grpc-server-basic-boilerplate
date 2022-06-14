@@ -1,9 +1,3 @@
-# go-grpc-server-basic-boilerplate
+# Golang gRPC Server Basic Boilerplate
 
-Stuff that must be installed:
-- go
-- protoc
-- docker
-- golangci-lint
-- bash
-- proto-gen-doc
+A simple boilerplate to use in other projects. For more information, see [this link to my blog](https://ornlu-is.github.io/post/go_grpc_server_boilerplate/)

@@ -1,6 +1,0 @@
-# hello
-FROM postgres:latest
-RUN echo "hey there"
-
-WORKDIR /migrations
-COPY migrations /migrations
