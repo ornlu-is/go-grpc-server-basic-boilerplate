@@ -1,0 +1,30 @@
+name: Makefile CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-go@v3
+      with:
+        go-version-file: 'path/to/go.mod'
+    - run: go version
+    
+    - name: Generate code from protobuf
+      run: make proto
+      
+    - name: Run linter
+      run: make lint
+      
+    - name: Run unit tests
+      run: make test
